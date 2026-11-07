@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">GameMath</string>
+    <string name="tagline">Offline calculators for game developers</string>
+    <string name="back">Back</string>
+    <string name="info">About</string>
+    <string name="close">Close</string>
+    <string name="cancel">Cancel</string>
+    <string name="copied">Copied</string>
+    <string name="copy_failed">Could not copy. The text may be too large for the clipboard</string>
+    <string name="share_failed">Could not share. The text may be too large</string>
+    <string name="info_message">GameMath works fully offline and asks for no permissions. It has no ads, no analytics and no accounts.\n\nPresets stay in the private storage of this app. They only leave it when you copy or share an export.\n\nLong-press a result to copy it.</string>
+    <string name="fix_fields">Fix the fields marked in red</string>
+
+    <string name="tool_progression">Progression curves</string>
+    <string name="tool_progression_summary">XP or damage per level, chart, table, C# and JSON export</string>
+    <string name="tool_loot">Loot tables</string>
+    <string name="tool_loot_summary">Exact odds, pity counter, seeded Monte Carlo check</string>
+    <string name="tool_easing">Easing curves</string>
+    <string name="tool_easing_summary">Animated chart and a C# function to copy</string>
+    <string name="tool_texture">Texture memory</string>
+    <string name="tool_texture_summary">Size, format and mipmaps to total memory</string>
+    <string name="tool_frame">Frame budget</string>
+    <string name="tool_frame_summary">Target FPS to milliseconds, and what remains</string>
+    <string name="tool_screen">Aspect and safe area</string>
+    <string name="tool_screen_summary">Resolution, orthographic size, tile grid, atlas padding</string>
+    <string name="tool_damage">Damage formula</string>
+    <string name="tool_damage_summary">Expected damage per hit and per second</string>
+
+    <string name="presets">Presets</string>
+    <string name="preset_save">Save current</string>
+    <string name="preset_name">Preset name</string>
+    <string name="preset_name_needed">Enter a name for the preset</string>
+    <string name="preset_saved">Preset saved</string>
+    <string name="preset_save_failed">Could not save the preset</string>
+    <string name="preset_full">Preset storage is full. Delete a preset first</string>
+    <string name="preset_load">Load</string>
+    <string name="preset_delete">Delete</string>
+    <string name="preset_deleted">Preset deleted</string>
+    <string name="preset_none">No presets yet.</string>
+    <string name="preset_damaged">The preset file is damaged and cannot be listed. It is kept beside the new file when you save a preset.</string>
+    <string name="preset_unreadable">The preset file could not be read, so it was left untouched. Saving is blocked until it can be read.</string>
+
+    <string name="tab_curve">Curve</string>
+    <string name="tab_table">Table</string>
+    <string name="tab_export">Export</string>
+    <string name="tab_items">Items</string>
+    <string name="tab_odds">Odds</string>
+
+    <string name="export_name">Name in the export</string>
+    <string name="export_format">Format</string>
+    <string name="export_csharp">C#</string>
+    <string name="export_json">JSON</string>
+    <string name="export_type">Number type</string>
+    <string name="copy">Copy</string>
+    <string name="share">Share</string>
+    <string name="preview_cut">This preview is shortened. Copy and Share give the full text.</string>
+
+    <string name="field_value">Value</string>
+    <string name="curve_type">Curve</string>
+    <string name="levels">Levels</string>
+    <string name="field_base">Value at level 1</string>
+    <string name="field_slope">Added per level</string>
+    <string name="field_scale">Scale</string>
+    <string name="field_power">Power</string>
+    <string name="field_growth">Growth per level</string>
+    <string name="field_max">Maximum</string>
+    <string name="field_steepness">Steepness</string>
+    <string name="field_midpoint">Midpoint level</string>
+    <string name="formula_linear">value = base + added x (level - 1)</string>
+    <string name="formula_polynomial">value = base + scale x (level - 1)^power</string>
+    <string name="formula_exponential">value = base x growth^(level - 1)</string>
+    <string name="formula_logistic">value = maximum / (1 + e^(-steepness x (level - midpoint)))</string>
+    <plurals name="curve_summary">
+        <item quantity="one">%1$d level, value %2$s to %3$s</item>
+        <item quantity="other">%1$d levels, from %2$s to %3$s</item>
+    </plurals>
+    <string name="curve_capped">You asked for %1$s levels. The table stops at %2$d, because a longer one is too large to chart, copy or share reliably.</string>
+    <string name="curve_stopped">Stopped at level %1$d: from there on the value or the running total no longer fits in a number.</string>
+    <string name="table_level">Level</string>
+    <string name="table_value">Value</string>
+    <string name="table_total">Total</string>
+    <string name="chart_description">Chart of the current values</string>
+
+    <string name="loot_items">Items and weights</string>
+    <string name="item_name">Name</string>
+    <string name="item_weight">Weight</string>
+    <string name="item_add">Add item</string>
+    <string name="row_delete">Delete this row</string>
+    <string name="tries">Tries (N)</string>
+    <string name="pity_after">Pity: guaranteed by try (empty for none)</string>
+    <string name="pity_item">Pity item number</string>
+    <string name="pity_help">The pity item is guaranteed on this try if it has not dropped since the last time. The counter resets when it drops.</string>
+    <plurals name="loot_summary">
+        <item quantity="one">%1$d item, total weight %2$s</item>
+        <item quantity="other">%1$d items, total weight %2$s</item>
+    </plurals>
+    <string name="odds_chance">Chance per try: %1$s</string>
+    <string name="odds_rate">Long-run share of drops: %1$s</string>
+    <string name="odds_expected">Expected tries per drop: %1$s</string>
+    <string name="odds_never">Expected tries per drop: never drops</string>
+    <string name="odds_in_tries">At least one in %1$s tries: %2$s</string>
+    <string name="odds_too_big">At least one in %1$s tries: too large to compute exactly with pity, see Monte Carlo</string>
+    <string name="odds_mc">Monte Carlo, runs of %3$s tries: %1$s of drops, at least one in %2$s of runs</string>
+    <string name="odds_mc_pity">With pity, short runs give the pity item a smaller share of drops than the long-run share, because a run can end before the counter is reached.</string>
+    <string name="odds_exact">Exact odds</string>
+    <string name="mc_title">Monte Carlo check</string>
+    <string name="mc_runs">Runs (each one makes N tries)</string>
+    <string name="mc_seed">Seed</string>
+    <string name="mc_start">Run Monte Carlo</string>
+    <string name="mc_cancel">Cancel</string>
+    <string name="mc_capped">Capped at %1$s runs to stay under %2$s rolls in total.</string>
+    <string name="mc_summary">%1$s runs, %2$s rolls, seed %3$s</string>
+    <string name="mc_cancelled">Cancelled after %1$s runs and %2$s rolls, seed %3$s</string>
+    <string name="mc_stale">The inputs changed since the last run. Run again to compare.</string>
+    <string name="mc_failed">The Monte Carlo run failed.</string>
+    <string name="mc_running">Monte Carlo: %1$d%%</string>
+
+    <string name="easing_choice">Easing</string>
+    <string name="easing_code">C# function (Unity Mathf)</string>
+    <string name="easing_copy">Copy C# function</string>
+
+    <string name="width">Width (px)</string>
+    <string name="height">Height (px)</string>
+    <string name="format">Format</string>
+    <string name="mipmaps">Mipmaps</string>
+    <string name="texture_count">Number of textures</string>
+    <string name="texture_total">Total memory</string>
+    <string name="texture_each">Each texture</string>
+    <string name="texture_top">Largest mip level</string>
+    <string name="texture_levels">Mip levels</string>
+    <string name="exact_bytes">%1$s (%2$s bytes)</string>
+
+    <string name="fps">Target FPS</string>
+    <string name="frame_systems">Systems and cost in ms</string>
+    <string name="system_name">System</string>
+    <string name="system_cost">ms</string>
+    <string name="system_add">Add system</string>
+    <string name="frame_budget">Frame budget</string>
+    <string name="frame_used">Used</string>
+    <string name="frame_remaining">Remaining</string>
+    <string name="frame_over">Over budget</string>
+    <string name="frame_ok">Within budget</string>
+    <string name="frame_value_ms">%1$s ms</string>
+    <string name="frame_used_value">%1$s ms (%2$s of the frame)</string>
+
+    <string name="screen_resolution">Resolution</string>
+    <string name="screen_aspect">Aspect ratio</string>
+    <string name="screen_decimal">Decimal ratio</string>
+    <string name="screen_megapixels">Megapixels</string>
+    <string name="screen_height_for">Height for this width and ratio</string>
+    <string name="screen_target_width">Target width (px)</string>
+    <string name="screen_ratio_w">Ratio width</string>
+    <string name="screen_ratio_h">Ratio height</string>
+    <string name="screen_safe">Safe area insets</string>
+    <string name="inset_left">Left inset (px)</string>
+    <string name="inset_top">Top inset (px)</string>
+    <string name="inset_right">Right inset (px)</string>
+    <string name="inset_bottom">Bottom inset (px)</string>
+    <string name="safe_size">Safe size</string>
+    <string name="safe_anchor_min">RectTransform anchorMin</string>
+    <string name="safe_anchor_max">RectTransform anchorMax</string>
+    <string name="screen_camera">2D camera</string>
+    <string name="camera_ppu">Pixels per unit</string>
+    <string name="camera_zoom">Pixel zoom</string>
+    <string name="camera_size">Orthographic size</string>
+    <string name="camera_world">Visible world size</string>
+    <string name="camera_unit">World units per screen pixel</string>
+    <string name="screen_tiles">Tile grid</string>
+    <string name="tile_size">Tile size (px)</string>
+    <string name="tile_full">Whole tiles on screen</string>
+    <string name="tile_visible">Tiles to draw, partial ones included</string>
+    <string name="screen_atlas">Atlas padding</string>
+    <string name="atlas_columns">Columns</string>
+    <string name="atlas_rows">Rows</string>
+    <string name="atlas_tile_w">Tile width (px)</string>
+    <string name="atlas_tile_h">Tile height (px)</string>
+    <string name="atlas_padding">Padding between tiles (px)</string>
+    <string name="atlas_margin">Margin around the atlas (px)</string>
+    <string name="atlas_size">Atlas size needed</string>
+    <string name="atlas_pot">Next power of two</string>
+    <string name="atlas_tiles">Tiles</string>
+    <string name="atlas_width">Existing atlas width (px)</string>
+    <string name="atlas_height">Existing atlas height (px)</string>
+    <string name="atlas_capacity">Fits in the existing atlas</string>
+    <string name="pair_x">%1$s x %2$s</string>
+    <string name="pair_vector">(%1$s, %2$s)</string>
+    <string name="pair_ratio">%1$d:%2$d</string>
+    <string name="tiles_grid">%1$d x %2$d, total %3$d</string>
+    <string name="plain_number">%1$d</string>
+
+    <string name="damage_formula">Formula</string>
+    <string name="attack">Attack</string>
+    <string name="defense">Defense</string>
+    <string name="crit_chance">Crit chance (%)</string>
+    <string name="crit_multiplier">Crit multiplier</string>
+    <string name="attacks_per_second">Attacks per second</string>
+    <string name="minimum_damage">Minimum damage</string>
+    <string name="damage_normal">Normal hit</string>
+    <string name="damage_crit">Critical hit</string>
+    <string name="damage_per_hit">Expected damage per hit</string>
+    <string name="damage_per_second">Expected damage per second</string>
+</resources>
